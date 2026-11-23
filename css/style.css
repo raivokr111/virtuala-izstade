@@ -207,6 +207,7 @@ img {
 }
 
 .karusela-ramis {
+  position: relative;
   max-width: 52rem;
 }
 
@@ -227,21 +228,55 @@ img {
 }
 
 .karusela-vadiba {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  padding: .75rem 1rem;
-  border-top: 1px solid var(--apmale);
+  position: absolute;
+  inset: 0 0 auto;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+  padding: .5rem;
+  pointer-events: none;
 }
 
 .karusela-vadiba button {
-  padding: .45rem .75rem;
-  border: 1px solid var(--vara);
+  grid-row: 2;
+  min-height: 44px;
+  padding: .35rem .5rem;
+  border: 1px solid #ffffff80;
   border-radius: .3rem;
-  background: #fff;
-  color: var(--vara);
+  background: #171b20eb;
+  color: #fff;
   font: inherit;
+  font-size: .875rem;
   font-weight: 650;
+  pointer-events: auto;
+}
+
+#ieprieksejais, #nakamais {
+  width: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+#ieprieksejais {
+  grid-column: 1;
+  justify-self: start;
+}
+
+#nakamais {
+  grid-column: 3;
+  justify-self: end;
+}
+
+#automatika {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: end;
+  justify-self: center;
 }
 
 .karusela-vadiba button:hover:enabled {
@@ -251,8 +286,18 @@ img {
 }
 
 .karusela-vadiba button:disabled {
-  border-color: var(--apmale);
-  color: #665f57;
+  color: #e1ddd7;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .karusela-vadiba {
+    opacity: 0;
+  }
+
+  .karusela-ramis:hover .karusela-vadiba,
+  .karusela-ramis:focus-within .karusela-vadiba {
+    opacity: 1;
+  }
 }
 
 .attelu-avoti {
