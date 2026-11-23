@@ -1,0 +1,292 @@
+﻿/* :root vienkarsi aizstaj html tagu, seit ir vienkarsi defineti mainigie */
+:root {
+  --tumss: #171b20;
+  --gaisma: #f6f3ed;
+  --vara: #9d421e;
+  --akcents: #ffd0a7;
+  --apmale: #ddd6ca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--gaisma);
+  color: var(--tumss);
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, p, figure {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.12;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+/* clamp funkcija pielago fonta lielumu ekrana izmeram. */
+h1 {
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ietvars {
+  width: min(calc(100% - 2rem), 72rem);
+  margin-inline: auto;
+}
+
+.galvene, .ievads, .kajene {
+  background: var(--tumss);
+  color: var(--gaisma);
+}
+
+.galvene {
+  border-bottom: 1px solid #43474a;
+}
+
+.galvenes-saturs, .kajenes-saturs, nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem 1.5rem;
+}
+
+.galvenes-saturs, .kajenes-saturs {
+  justify-content: space-between;
+  padding-block: 1.15rem;
+}
+
+.galvene a {
+  text-decoration: none;
+}
+
+.galvene a:hover, .kajene a:hover {
+  color: var(--akcents);
+  text-decoration: underline;
+}
+
+.zimols {
+  font-weight: 750;
+}
+
+.ievads {
+  padding-block: clamp(2.75rem, 7vw, 6rem);
+}
+
+.ievada-saturs {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+}
+
+.uzraksts {
+  margin-bottom: .75rem;
+  color: var(--akcents);
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.ievads h1 + p {
+  max-width: 34ch;
+  margin-block: 1.25rem 1.5rem;
+  color: #e1ddd7;
+  font-size: 1.1rem;
+}
+
+.poga {
+  display: inline-block;
+  padding: .65rem 1.05rem;
+  border-radius: .3rem;
+  background: var(--akcents);
+  color: var(--tumss);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.poga:hover {
+  background: #fff0dd;
+}
+
+.ievads img {
+  aspect-ratio: 4 / 3;
+  border-radius: .65rem;
+}
+
+.ievads figcaption {
+  margin-top: .5rem;
+  color: #e1ddd7;
+  font-size: .9rem;
+}
+
+.sadala {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+
+.par-izstadi {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: .5rem 2rem;
+}
+
+.par-izstadi p {
+  max-width: 65ch;
+}
+
+.galerija {
+  border-block: 1px solid var(--apmale);
+  background: #ede8df;
+}
+
+.sadalas-apraksts {
+  margin-bottom: 1.5rem;
+}
+
+.galerijas-rezgis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.eksponats, .karusela-ramis {
+  overflow: hidden;
+  border: 1px solid var(--apmale);
+  border-radius: .65rem;
+  background: #fff;
+  box-shadow: 0 .3rem .7rem #171b2010;
+}
+
+.eksponats img {
+  aspect-ratio: 4 / 3;
+}
+
+.eksponata-teksts {
+  padding: 1rem;
+}
+
+.eksponata-teksts time {
+  color: var(--vara);
+  font-weight: 750;
+}
+
+.eksponata-teksts h3 {
+  margin-block: .2rem .55rem;
+  font-size: 1.15rem;
+}
+
+.eksponata-teksts p {
+  font-size: .95rem;
+}
+
+.karusela-ramis {
+  max-width: 52rem;
+}
+
+.karusela-atteli img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--tumss);
+}
+
+.karusela-attels figcaption {
+  padding: .85rem 1rem;
+  font-weight: 700;
+}
+
+.karusela-attels time {
+  margin-right: .5rem;
+  color: var(--vara);
+}
+
+.karusela-vadiba {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: .75rem 1rem;
+  border-top: 1px solid var(--apmale);
+}
+
+.karusela-vadiba button {
+  padding: .45rem .75rem;
+  border: 1px solid var(--vara);
+  border-radius: .3rem;
+  background: #fff;
+  color: var(--vara);
+  font: inherit;
+  font-weight: 650;
+}
+
+.karusela-vadiba button:hover:enabled {
+  background: var(--vara);
+  color: #fff;
+  cursor: pointer;
+}
+
+.karusela-vadiba button:disabled {
+  border-color: var(--apmale);
+  color: #665f57;
+}
+
+.attelu-avoti {
+  margin-top: 1.25rem;
+  font-size: .9rem;
+}
+
+.attelu-avoti summary {
+  cursor: pointer;
+}
+
+.attelu-avoti ul {
+  padding-left: 1.25rem;
+}
+
+@media (max-width: 60rem) {
+  .galerijas-rezgis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 44rem) {
+  .ievada-saturs, .par-izstadi {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 29rem) {
+  .galerijas-rezgis {
+    grid-template-columns: 1fr;
+  }
+
+  .galvenes-saturs {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

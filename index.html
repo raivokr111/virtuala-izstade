@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="automobiļu vēsture.">
+  <title>Automobiļu vēsture | Virtuālā izstāde</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="galvene" id="sakums">
+    <div class="ietvars galvenes-saturs">
+      <a class="zimols" href="#sakums">Virtuālā izstāde</a>
+      <nav aria-label="galvenes navigācija">
+        <a href="#par-izstadi">Par izstādi</a>
+        <a href="#galerija">Galerija</a>
+        <a href="#karuselis">Karuselis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="ievads" aria-labelledby="nosaukums">
+      <div class="ietvars ievada-saturs">
+        <div>
+          <p class="uzraksts">1886–2010</p>
+          <h1 id="nosaukums">Automobiļu<br>vēsture</h1>
+          <p>Ceļā no Kārļa Benca trīsriteņa līdz sērijveidā ražotam elektroauto.</p>
+          <a class="poga" href="#galerija">Apskatīt galeriju</a>
+        </div>
+        <figure>
+          <img src="images/mercedes.jpg" alt="Mercedes-Benz 300 SL">
+          <figcaption>Mercedes-Benz 300 SL · 1954</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sadala ietvars par-izstadi" id="par-izstadi">
+      <h2>Par izstādi</h2>
+      <p>Astoņi modeļi parāda, kā vairāk nekā gadsimta laikā mainījās automobiļu uzbūve un ražošana. Ford montāžas līnija ļāva ražot auto lielos apjomos, Mini taupīja vietu pilsētā, bet Prius un Leaf parādīja divus dažādus veidus, kā elektromotoru izmantot ikdienas braucienos.</p>
+    </section>
+
+    <section class="sadala galerija" id="galerija">
+      <div class="ietvars">
+        <h2>Attēlu galerija</h2>
+        <p class="sadalas-apraksts">Modeļi sakārtoti pēc to ieviešanas vai pirmās prezentācijas gada.</p>
+        <div class="galerijas-rezgis">
+          <article class="eksponats">
+            <!-- lazy loading = ielade bildi tikai tad kad lietotajs ir aiztinis lidz vinai iekš lapas-->
+            <img src="images/benz.jpg" alt="Benz Patent-Motorwagen otrais modelis." loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="1886">1886</time>
+              <h3>Benz Patent-Motorwagen</h3>
+              <p>Kārļa Benca patentētais trīsriteņu automobilis ar benzīna dzinēju.</p>
+            </div>
+          </article>
+          <article class="eksponats">
+            <img src="images/ford.jpg" alt="Ford Model T" loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="1908">1908</time>
+              <h3>Ford Model T</h3>
+              <p>Masveida ražošana padarīja automobili pieejamu plašākam pircēju lokam.</p>
+            </div>
+          </article>
+          <article class="eksponats">
+            <img src="images/volkswagen.jpg" alt="Volkswagen Beetle" loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="1938">1938</time>
+              <h3>Volkswagen Beetle</h3>
+              <p>Noapaļotās formas dēļ šo automobili Latvijā dēvē par vabolīti.</p>
+            </div>
+          </article>
+          <article class="eksponats">
+            <img src="images/citroen.jpg" alt="Citroën 2CV" loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="1948">1948</time>
+              <h3>Citroën 2CV</h3>
+              <p>Vienkāršs un viegls automobilis, ko izstrādāja ikdienas braucieniem Francijas laukos.</p>
+            </div>
+          </article>
+          <article class="eksponats">
+            <img src="images/mercedes.jpg" alt="Mercedes-Benz 300 SL" loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="1954">1954</time>
+              <h3>Mercedes-Benz 300 SL</h3>
+              <p>Sporta automobilis ar uz augšu veramām durvīm.</p>
+            </div>
+          </article>
+          <article class="eksponats">
+            <img src="images/mini.jpg" alt="Mini" loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="1959">1959</time>
+              <h3>Mini</h3>
+              <p>Šķērsām novietotais dzinējs atbrīvoja vairāk vietas pasažieriem.</p>
+            </div>
+          </article>
+          <article class="eksponats">
+            <img src="images/toyota.jpg" alt="Toyota Prius" loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="1997">1997</time>
+              <h3>Toyota Prius</h3>
+              <p>Hibrīdautomobilis, kas apvieno benzīna dzinēju un elektromotoru.</p>
+            </div>
+          </article>
+          <article class="eksponats">
+            <img src="images/nissan.jpg" alt="Nissan Leaf" loading="lazy">
+            <div class="eksponata-teksts">
+              <time datetime="2010">2010</time>
+              <h3>Nissan Leaf</h3>
+              <p>Elektroautomobilis, kura dzinēju darbina uzlādējams akumulators.</p>
+            </div>
+          </article>
+        </div>
+        <details class="attelu-avoti">
+          <summary>Foto avoti</summary>
+          <ul>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Benz_Patent-Motorwagen_Nr_2.jpg">Benz Patent-Motorwagen</a> · Attēlu Viljamam Vorbijam Bomontam nodeva Kārlis Bencs · publiskais īpašums</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:1925_Ford_Model_T_touring.jpg">Ford Model T</a> · ModelTMitch · publiskais īpašums</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:VW_K%C3%A4fer_Baujahr_1966.jpg">Volkswagen Beetle</a> · Vwexport1300 · <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Citroen_2CV_1X7A7979.jpg">Citroën 2CV</a> · Alexander Migl · <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Fox_Classic_Car_Collection,_2008_(02).JPG">Mercedes-Benz 300 SL</a> · Bahnfrend · <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Morris_Mini-Minor_1959_(621_AOK).jpg">Mini</a> · DeFacto · <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:1998_Toyota_Prius_NHW10_Silver_Strara_Metallic_(front).jpg">Toyota Prius</a> · Damian B Oh · <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:2017_Nissan_LEAF_(ZE0_MY17)_hatchback_(2018-11-02)_01.jpg">Nissan Leaf</a> · EurovisionNim · <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="sadala ietvars" id="karuselis">
+      <h2>Attēlu karuselis</h2>
+      <div class="karusela-ramis">
+        <div class="karusela-atteli" aria-live="off">
+          <figure class="karusela-attels">
+            <img src="images/benz.jpg" alt="Benz Patent-Motorwagen otrais modelis vēsturiskā fotogrāfijā" loading="lazy">
+            <figcaption><time datetime="1886">1886</time> Benz Patent-Motorwagen</figcaption>
+          </figure>
+          <figure class="karusela-attels" hidden>
+            <img src="images/ford.jpg" alt="Ford Model T" loading="lazy">
+            <figcaption><time datetime="1908">1908</time> Ford Model T</figcaption>
+          </figure>
+          <figure class="karusela-attels" hidden>
+            <img src="images/mercedes.jpg" alt="Mercedes-Benz 300 SL" loading="lazy">
+            <figcaption><time datetime="1954">1954</time> Mercedes-Benz 300 SL</figcaption>
+          </figure>
+          <figure class="karusela-attels" hidden>
+            <img src="images/mini.jpg" alt="Mini" loading="lazy">
+            <figcaption><time datetime="1959">1959</time> Mini</figcaption>
+          </figure>
+          <figure class="karusela-attels" hidden>
+            <img src="images/nissan.jpg" alt="Nissan Leaf" loading="lazy">
+            <figcaption><time datetime="2010">2010</time> Nissan Leaf</figcaption>
+          </figure>
+        </div>
+        <div class="karusela-vadiba" aria-label="Karuseļa vadība">
+          <button type="button" id="ieprieksejais" disabled>Iepriekšējais</button>
+          <button type="button" id="nakamais" disabled>Nākamais</button>
+          <button type="button" id="automatika" disabled>Apturēt</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="kajene">
+    <div class="ietvars kajenes-saturs">
+      <p>© Vološins un Sprukuls</p>
+      <a href="#sakums">Atpakaļ uz sākumu</a>
+    </div>
+  </footer>
+</body>
+</html>
