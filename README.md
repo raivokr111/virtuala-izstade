@@ -2,7 +2,7 @@
 
 ## 1. Projekta apraksts
 
-Praktisko mācību darbā veidojam virtuālo izstādi **„Automobiļu vēsture”**. Izstādē apskatāmi astoņi automobiļu modeļi no 1886. līdz 2010. gadam. Tie parāda, kā automobiļi attīstījās no Kārļa Benca trīsriteņa līdz sērijveidā ražotiem elektroauto.
+Praktisko mācību darbā izveidojām virtuālo izstādi **„Automobiļu vēsture”**. Izstādē apskatāmi astoņi automobiļu modeļi no 1886. līdz 2010. gadam. Tie parāda, kā automobiļi attīstījās no Kārļa Benca trīsriteņa līdz sērijveidā ražotiem elektroauto.
 
 ## 2. Komandas dalībnieki
 
@@ -11,14 +11,13 @@ Praktisko mācību darbā veidojam virtuālo izstādi **„Automobiļu vēsture�
 
 ## 3. GitHub repozitorijs
 
-Projekta pirmkods un izmaiņu vēsture pieejama GitHub repozitorijā
-GitHub repository: https://github.com/raivokr111/virtuala-izstade
+Projekta pirmkods un izmaiņu vēsture ir pieejami [GitHub repozitorijā](https://github.com/raivokr111/virtuala-izstade).
 
 ## 4. Izmantotās tehnoloģijas
 
 - **HTML5** vietnes struktūrai, navigācijai un attēlu aprakstiem.
 - **CSS3** noformējumam un responsīvam izkārtojumam ar Flexbox, Grid un multivides vaicājumiem.
-- **JavaScript** paredzēts karuseļa vadībai.
+- **JavaScript** karuseļa vadībai un automātiskai attēlu pārslēgšanai.
 - **Git un GitHub** izmaiņu vēsturei un komandas darbam.
 
 ## 5. Tīmekļa vietnes funkcionalitāte
@@ -26,22 +25,19 @@ GitHub repository: https://github.com/raivokr111/virtuala-izstade
 - Galvene ar saitēm uz izstādes sadaļām.
 - Ievads ar galveno attēlu un saiti uz galeriju.
 - Izstādes apraksts un astoņu automobiļu attēlu galerija.
-- Karuseļa izkārtojums ar pieciem attēliem un to nosaukumiem.
+- Interaktīvs karuselis ar pieciem attēliem un to nosaukumiem. Bultiņas ļauj pāriet uz iepriekšējo vai nākamo attēlu.
+- Atverot lapu, karuselis automātiski pārslēdz attēlu ik pēc piecām sekundēm. Ar pogām **Apturēt** un **Atsākt** var vadīt automātisko pārslēgšanu.
 - Responsīvs izkārtojums datoriem un tālruņiem.
-- Kājene ar komandas uzvārdiem un saiti uz lapas sākumu.
-
-Karuselim vēl jāpievieno attēlu pārslēgšana ar pogām, automātiskā pārslēgšana un iespēja to apturēt un atsākt.
+- Kājene ar komandas uzvārdiem, e-pasta adresi un saitēm uz izstādes aprakstu un lapas sākumu.
 
 ## 6. Projekta palaišana
 
 1. Lejupielādē vai klonē repozitoriju.
-2. Ja lejupielādēji ZIP failu, vispirms exportē to.
+2. Ja lejupielādēji ZIP failu, vispirms to exporto sev patka.
 3. Projekta mapē atver `index.html` tīmekļa pārlūkprogrammā.
-4. Izmēģini navigācijas saites un apskati galeriju.
+4. Izmēģini navigācijas saites, apskati galeriju un pārbaudi karuseļa vadību.
 
 ## 7. Projekta izstrādes ieguldījums
 
-- Paveikts HTML un CSS darbs, kas ietver lapas struktūru, navigāciju, galerijas izkārtojumu un responsīvo noformējumu.
-
-- Raivo Kristers Vološins: Darbojos ar HTML, CSS projekta pusi, JavaScriptu vispār neaiztiku.
-- Roberts Sprukuls: Darbojos ar JavaScript projekta pusi, kā arī nedaudz CSS kopā ar Raivo klātienē, lai abiem būtu patīkams vizuālais noformējums.
+- **Raivo Kristers Vološins** izveidoju lapas HTML struktūru, navigāciju un galerijas izkārtojumu, kā arī strādāju pie responsīvā CSS noformējuma.
+- **Roberts Sprukuls** izstrādāju karuseļa JavaScript vadību un kopā ar Raivo pielāgoju CSS noformējumu.
