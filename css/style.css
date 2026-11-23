@@ -1,11 +1,11 @@
 ﻿/* :root vienkarsi aizstaj html tagu, seit ir vienkarsi defineti mainigie */
 :root {
-  --tumss: #20282e;
-  --gaisma: #f7f8f8;
-  --zils: #355c65;
-  --klusinats: #515e65;
-  --akcents: #bed5da;
-  --apmale: #d8dfe1;
+  --tumss: #282828;
+  --gaisma: #f7f7f7;
+  --peleks: #494949;
+  --klusinats: #595959;
+  --akcents: #d6d6d6;
+  --apmale: #d9d9d9;
 }
 
 * {
@@ -91,7 +91,7 @@ img {
 }
 
 .galvene a:hover {
-  color: var(--zils);
+  color: var(--peleks);
   text-decoration: underline;
 }
 
@@ -125,7 +125,7 @@ img {
 
 .uzraksts {
   margin-bottom: .75rem;
-  color: var(--zils);
+  color: var(--peleks);
   font-weight: 700;
   letter-spacing: .12em;
 }
@@ -141,7 +141,7 @@ img {
   display: inline-block;
   padding: .65rem 1.05rem;
   border-radius: .3rem;
-  background: var(--zils);
+  background: var(--peleks);
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -208,7 +208,7 @@ img {
 }
 
 .eksponata-teksts time {
-  color: var(--zils);
+  color: var(--peleks);
   font-weight: 750;
 }
 
@@ -243,7 +243,7 @@ img {
 
 .karusela-attels time {
   margin-right: .5rem;
-  color: var(--zils);
+  color: var(--peleks);
 }
 
 .karusela-vadiba {
@@ -264,7 +264,7 @@ img {
   padding: .35rem .5rem;
   border: 1px solid #ffffff80;
   border-radius: .3rem;
-  background: #20282ef2;
+  background: #282828f2;
   color: #fff;
   font: inherit;
   font-size: .875rem;
@@ -299,13 +299,13 @@ img {
 }
 
 .karusela-vadiba button:hover:enabled {
-  background: var(--zils);
+  background: var(--peleks);
   color: #fff;
   cursor: pointer;
 }
 
 .karusela-vadiba button:disabled {
-  color: #dce7f7;
+  color: #e0e0e0;
 }
 
 @media (hover: hover) and (pointer: fine) {
