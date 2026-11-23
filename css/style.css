@@ -1,10 +1,11 @@
 ﻿/* :root vienkarsi aizstaj html tagu, seit ir vienkarsi defineti mainigie */
 :root {
-  --tumss: #171b20;
-  --gaisma: #f6f3ed;
-  --vara: #9d421e;
-  --akcents: #ffd0a7;
-  --apmale: #ddd6ca;
+  --tumss: #20282e;
+  --gaisma: #f7f8f8;
+  --zils: #355c65;
+  --klusinats: #515e65;
+  --akcents: #bed5da;
+  --apmale: #d8dfe1;
 }
 
 * {
@@ -34,13 +35,13 @@ h1, h2 {
 }
 /* clamp funkcija pielago fonta lielumu ekrana izmeram. */
 h1 {
-  font-size: clamp(2.8rem, 7vw, 6rem);
-  letter-spacing: -0.045em;
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+  letter-spacing: -.035em;
 }
 
 h2 {
   margin-bottom: 1rem;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 a {
@@ -59,17 +60,18 @@ img {
 }
 
 .ietvars {
-  width: min(calc(100% - 2rem), 72rem);
+  width: min(calc(100% - 2rem), 76rem);
   margin-inline: auto;
 }
 
-.galvene, .ievads, .kajene {
+.kajene {
   background: var(--tumss);
   color: var(--gaisma);
 }
 
 .galvene {
-  border-bottom: 1px solid #43474a;
+  background: #fff;
+  border-bottom: 1px solid var(--apmale);
 }
 
 .galvenes-saturs, .kajenes-saturs, nav {
@@ -81,14 +83,19 @@ img {
 
 .galvenes-saturs, .kajenes-saturs {
   justify-content: space-between;
-  padding-block: 1.15rem;
+  padding-block: 1.35rem;
 }
 
 .galvene a {
   text-decoration: none;
 }
 
-.galvene a:hover, .kajene a:hover {
+.galvene a:hover {
+  color: var(--zils);
+  text-decoration: underline;
+}
+
+.kajene a:hover {
   color: var(--akcents);
   text-decoration: underline;
 }
@@ -98,19 +105,27 @@ img {
 }
 
 .ievads {
-  padding-block: clamp(2.75rem, 7vw, 6rem);
+  padding-top: clamp(1.5rem, 4vw, 3.5rem);
 }
 
 .ievada-saturs {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   align-items: center;
-  gap: clamp(1.5rem, 5vw, 4rem);
+  gap: clamp(1.25rem, 4vw, 3.5rem);
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--apmale);
+  background: #fff;
+}
+
+.ievada-saturs figure {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .uzraksts {
   margin-bottom: .75rem;
-  color: var(--akcents);
+  color: var(--zils);
   font-weight: 700;
   letter-spacing: .12em;
 }
@@ -118,7 +133,7 @@ img {
 .ievads h1 + p {
   max-width: 34ch;
   margin-block: 1.25rem 1.5rem;
-  color: #e1ddd7;
+  color: var(--klusinats);
   font-size: 1.1rem;
 }
 
@@ -126,35 +141,36 @@ img {
   display: inline-block;
   padding: .65rem 1.05rem;
   border-radius: .3rem;
-  background: var(--akcents);
-  color: var(--tumss);
+  background: var(--zils);
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
 }
 
 .poga:hover {
-  background: #fff0dd;
+  background: var(--tumss);
 }
 
 .ievads img {
-  aspect-ratio: 4 / 3;
-  border-radius: .65rem;
+  aspect-ratio: 16 / 10;
+  object-position: center 45%;
 }
 
 .ievads figcaption {
   margin-top: .5rem;
-  color: #e1ddd7;
+  color: var(--klusinats);
   font-size: .9rem;
 }
 
 .sadala {
-  padding-block: clamp(2.5rem, 6vw, 5rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
 }
 
 .par-izstadi {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   gap: .5rem 2rem;
+  align-items: baseline;
 }
 
 .par-izstadi p {
@@ -163,7 +179,7 @@ img {
 
 .galerija {
   border-block: 1px solid var(--apmale);
-  background: #ede8df;
+  background: #fff;
 }
 
 .sadalas-apraksts {
@@ -173,19 +189,18 @@ img {
 .galerijas-rezgis {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .eksponats, .karusela-ramis {
   overflow: hidden;
   border: 1px solid var(--apmale);
-  border-radius: .65rem;
+  border-radius: .3rem;
   background: #fff;
-  box-shadow: 0 .3rem .7rem #171b2010;
 }
 
 .eksponats img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
 }
 
 .eksponata-teksts {
@@ -193,7 +208,7 @@ img {
 }
 
 .eksponata-teksts time {
-  color: var(--vara);
+  color: var(--zils);
   font-weight: 750;
 }
 
@@ -203,12 +218,16 @@ img {
 }
 
 .eksponata-teksts p {
+  color: var(--klusinats);
   font-size: .95rem;
 }
 
 .karusela-ramis {
   position: relative;
-  max-width: 52rem;
+}
+
+#karuselis {
+  max-width: 56rem;
 }
 
 .karusela-atteli img {
@@ -224,7 +243,7 @@ img {
 
 .karusela-attels time {
   margin-right: .5rem;
-  color: var(--vara);
+  color: var(--zils);
 }
 
 .karusela-vadiba {
@@ -245,7 +264,7 @@ img {
   padding: .35rem .5rem;
   border: 1px solid #ffffff80;
   border-radius: .3rem;
-  background: #171b20eb;
+  background: #20282ef2;
   color: #fff;
   font: inherit;
   font-size: .875rem;
@@ -280,13 +299,13 @@ img {
 }
 
 .karusela-vadiba button:hover:enabled {
-  background: var(--vara);
+  background: var(--zils);
   color: #fff;
   cursor: pointer;
 }
 
 .karusela-vadiba button:disabled {
-  color: #e1ddd7;
+  color: #dce7f7;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -322,6 +341,10 @@ img {
 @media (max-width: 44rem) {
   .ievada-saturs, .par-izstadi {
     grid-template-columns: 1fr;
+  }
+
+  .ievada-saturs figure {
+    grid-row: auto;
   }
 }
 
